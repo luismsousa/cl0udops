@@ -1,5 +1,4 @@
 ---
-import { Markdown } from 'astro/components';
 ---
 <article>
     <div class="banner">
@@ -7,38 +6,32 @@ import { Markdown } from 'astro/components';
     </div>
 
     <section>
-        <Markdown>
-            ## 🚀 Project Structure
-
-            Inside of your Astro project, you'll see the following folders and files:
-
-            ```
-            /
-            ├── public/
-            │   ├── robots.txt
-            │   └── favicon.ico
-            ├── src/
-            │   ├── components/
-            │   │   └── Tour.astro
-            │   └── pages/
-            │       └── index.astro
-            └── package.json
-            ```
-
-            Astro looks for `.astro` or `.md` files in the `src/pages/` directory.
+        <h2>🚀 Project Structure</h2>
+        <p>Inside of your Astro project, you'll see the following folders and files:</p>
+        <pre><code>/
+├── public/
+│   ├── robots.txt
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   └── Tour.astro
+│   └── pages/
+│       └── index.astro
+└── package.json</code></pre>
+        <p>
+            Astro looks for <code>.astro</code> or <code>.md</code> files in the <code>src/pages/</code> directory.
             Each page is exposed as a route based on its file name.
-
-            There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-            Any static assets, like images, can be placed in the `public/` directory.
-        </Markdown>
+        </p>
+        <p>
+            There's nothing special about <code>src/components/</code>, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+        </p>
+        <p>Any static assets, like images, can be placed in the <code>public/</code> directory.</p>
     </section>
 
-     <section>
+    <section>
         <h2>👀 Want to learn more?</h2>
-        <p>Feel free to check <a href="https://github.com/snowpackjs/astro">our documentation</a> or jump into our <a href="https://astro.build/chat">Discord server</a>.</p>
+        <p>Feel free to check <a href="https://docs.astro.build/">our documentation</a> or jump into our <a href="https://astro.build/chat">Discord server</a>.</p>
     </section>
-    
 </article>
 
 <style>
@@ -74,11 +67,7 @@ import { Markdown } from 'astro/components';
         padding: 1em 1.5em;
     }
 
-    .tree {
-        line-height: 1.2;
-    }
-
-    code:not(.tree) {
+    code:not(pre code) {
         padding: 0.125em;
         margin: 0 -0.125em;
     }
