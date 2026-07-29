@@ -10,12 +10,12 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/preact": "^6.0.1",
-    "@astrojs/react": "^6.0.1",
+    "@astrojs/preact": "^6.0.2",
+    "@astrojs/react": "^6.0.2",
     "@astrojs/solid-js": "^7.0.1",
     "@astrojs/svelte": "^9.0.1",
     "@astrojs/vue": "^7.0.1",
-    "astro": "^7.1.4",
+    "astro": "^7.1.5",
     "preact": "^10.29.7",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
